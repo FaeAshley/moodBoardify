@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodBoardify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>MoodBoardify</h1>
+    <div class="controls">
+      <button id="add-text">Add Text</button>
+      <button id="add-image">Add Image</button>
+      <button id="save-board">Save Board</button>
+      <button id="clear-board">Clear Board</button>
+    </div>
+  </header>
+  
+  <main class="board-container">
+    <div id="board" class="board"></div>
+  </main>
+
+  <!-- Add Text Popup -->
+  <div id="text-popup" class="popup hidden">
+    <div class="popup-content">
+      <h3>Add Your Text</h3>
+      <textarea id="text-input" placeholder="Type something inspirational..." rows="4" required></textarea>
+      <div class="popup-buttons">
+        <button id="save-text-btn">Save</button>
+        <button id="add-text-cancel" class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Image Popup -->
+  <div id="image-popup" class="popup hidden">
+    <div class="popup-content">
+      <h3>Add an Image</h3>
+      <p>Enter an image URL or upload a file:</p>
+      <input id="image-url" type="text" placeholder="Paste image URL here" />
+      <p>Or</p>
+      <input id="image-upload" type="file" accept="image/*" />
+      <div class="popup-buttons">
+        <button id="save-image-btn">Save</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>✨ Powered by your creativity! ✨</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
